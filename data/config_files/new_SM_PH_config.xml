@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sepiaRv xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <parameters>
+    <root>C:\Users\Windowsw10\Documents\Programas\ReservoirViewer_dados_para_teste\SEPIARV_20200724T12.32.06Z-199-MAIORIGUAL800-MArit-MDif-Matrix\SEPIARV_20200724T12.32.06Z-199-MAIORIGUAL800-MArit-MDif-Matrix</root>
+    <folder2d>Export2D_20200724T12.32.06Z</folder2d>
+    <folderDistanceMatrix>DiffMatrix_20200724T12.32.06Z</folderDistanceMatrix>
+    <chart type="SMALLMULTIPLES" layoutCurve="PEANOHILBERT" />
+    <clustering type="XMEANS">
+      <distanceMatrix>MODELS3D_PROP</distanceMatrix>
+      <min>2</min>
+      <max>25</max>
+      <iterations>1</iterations>
+    </clustering>
+  </parameters>
+  <input>
+    <properties>
+      <property name="PERMIIGUAL800_0.0_DEFAULT_MATRIX_K" function="ARITHMETICMEAN" file2d="POR_0.0_DEFAULT_MATRIX_K.csv" fileDistanceMatrix="PERMIIGUAL800_0.0_M.csv" />
+    </properties>
+    <allModels>models.txt</allModels>
+    <highlightedModels>highlightedModels.txt</highlightedModels>
+    <nullBlocks>POR_0.0_DEFAULT_MATRIX_K.csv</nullBlocks>
+  </input>
+  <output>
+    <png filename="RVCHARTS\[PROP]-[CHART]_[CURVE]_[FUNC]_[CLUSTERING].PNG" height="0" width="0" />
+    <progressFile>progress.txt</progressFile>
+    <logFile>log.txt</logFile>
+  </output>
+</sepiaRv>
